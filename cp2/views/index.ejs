@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Comments</title>
+</head>
+<body>
+  <h1>Leave Comments</h1>
+  <form action="/comment" method="POST">
+    <textarea name="text" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+
+  <h2>Comments:</h2>
+  <% comments.forEach(comment => { %>
+    <div><%- comment %></div>
+  <% }); %>
+</body>
+</html>
